@@ -1,9 +1,13 @@
 # shiro-cas
 单点登录以及单点登出
+一共有三部分 
+1.cas client工程springboot-shiro-cas4
+2.cas server cas文件夹，放到tomcat中启动
+3.shiro.sql文件 导入数据库信息
 
 springboot-shiro-cas4这个工程  这只是cas  client端的代码，cas server端的配置可以自行网上查找配置，只需去官网下载，
 然后将war包重命名为cas.war放在tomcat的webapps文件夹下，启动tomcat，会自动解压出cas文件夹，
-然后修改\Tomcat 8.0\webapps\cas\WEB-INF\deployerConfigContext.xml文件即可将该文件夹
+然后修改\Tomcat 8.0\webapps\cas\WEB-INF\deployerConfigContext.xml文件即可
 当然也可以下载我配置好的server
 
 cas server 可以将cas文件夹复制到de webapps文件夹下
