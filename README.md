@@ -6,8 +6,9 @@ springboot-shiro-cas4这个工程  这只是cas  client端的代码，cas server
 然后修改\Tomcat 8.0\webapps\cas\WEB-INF\deployerConfigContext.xml文件即可将该文件夹
 当然也可以下载我配置好的server
 
-cas server 可以参考 链接：https://pan.baidu.com/s/1v5n1G95GD8We1vXeaxrH1A 密码：nzx9 将压缩包解压，放到tomcat的WebApps文件夹下即可
-deployerConfigContext.xml文件需要修改两处：
+cas server 可以将cas文件夹复制到de webapps文件夹下
+cas 文件夹也可以百度云下载 链接：https://pan.baidu.com/s/1v5n1G95GD8We1vXeaxrH1A 密码：nzx9 将压缩包解压，放到tomcat的WebApps文件夹下即可
+deployerConfigContext.xml文件（在WEB-INF文件夹下）需要修改两处：
 <!-- 数据库连接信息 -->
 
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -34,4 +35,7 @@ deployerConfigContext.xml文件需要修改两处：
 				</bean>
 sql 语句需要修改，根据自己数据库存放的用户名以及密码
 
+数据库文件shiro.sql文件，可以直接创建数据库信息
 数据库导入 链接：https://pan.baidu.com/s/1tD3DvmvNjuzJL2QQOf7lZw 密码：6001 可以下载文件导入到自己的数据库中
+
+上面的cas server 在tomcat中启动后，将springboot-shiro-cas4运行起来，此外数据库服务也要启动 访问http://localhost:8095/user/userDel http://localhost:8095/user/userAdd   http://localhost:8095/user/userList 会跳转到cas登录界面  输入用户名和密码  xjl   123就会跳转到相应的界面
