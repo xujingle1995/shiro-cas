@@ -4,6 +4,7 @@
 1.cas client工程springboot-shiro-cas4
 2.cas server cas文件夹，放到tomcat中启动
 3.shiro.sql文件 导入数据库信息
+也可以看一下另一篇文章 也是根据本工程写的 https://www.showdoc.cc/web/#/35766799839476?page_id=205929499076989
 
 springboot-shiro-cas4这个工程  这只是cas  client端的代码，cas server端的配置可以自行网上查找配置，只需去官网下载，
 然后将war包重命名为cas.war放在tomcat的webapps文件夹下，启动tomcat，会自动解压出cas文件夹，
